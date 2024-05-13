@@ -10,10 +10,11 @@ public class TaskTwo {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Hello, enter some text again.");
         String exer = reader.readLine();
-        System.out.println(exer);
+        //System.out.println(exer);
         char[] exer1 = exer.toCharArray();
         Arrays.sort(exer1);
         System.out.println(Arrays.toString(exer1));
+
 
 
         }

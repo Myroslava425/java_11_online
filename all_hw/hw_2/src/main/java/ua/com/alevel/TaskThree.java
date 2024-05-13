@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class TaskThree {
+/*public class TaskThree {
     public void exercise() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Hello, enter the lesson number");
@@ -15,25 +15,20 @@ public class TaskThree {
 
 
 
-                /*char [] exercise1 = exercise.toCharArray();
-        for (char aChar : exercise1) {
+        }*/
+    public class TaskThree {
+        public static void thirdTask() throws IOException {
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+            System.out.println("Please enter lesson number (from 1 to 10):");
+            String info = bufferedReader.readLine();
+            int lessonNumber = Integer.parseInt(info);
 
-            int i = aChar;
-            if (i == 1) {
-
-                System.out.println("9.45");
-            }
-            if (i == 2) {
-
-                System.out.println("10.35");
-            }
-            if (i == 3) {
-
-                System.out.println("11.35");
-            }*/
+            int calculation = lessonNumber * 45 + (lessonNumber / 2) * 5 + ((lessonNumber + 1) / 2 - 1) * 15;
+            System.out.println("End: " + (calculation / 60 + 9) + ":" + calculation % 60);
         }
-
     }
+
+
 
 
 

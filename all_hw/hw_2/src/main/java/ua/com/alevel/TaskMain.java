@@ -9,8 +9,10 @@ public class TaskMain {
         one.ex();
         TaskTwo two = new TaskTwo();
         two.exer();
-        TaskThree three = new TaskThree();
-        three.exercise();
+        /*TaskThree three = new TaskThree();
+        three.exercise();*/
+
+        TaskThree.thirdTask();
     }
 }
 
