@@ -17,7 +17,7 @@ import java.util.Scanner;
 
         }*/
     public class TaskThree {
-        public static void thirdTask() throws IOException {
+        public static void exercise() throws IOException {
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
             System.out.println("Please enter lesson number (from 1 to 10):");
             String info = bufferedReader.readLine();

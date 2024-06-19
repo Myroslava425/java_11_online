@@ -10,13 +10,14 @@ public class Operations {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String text = null;
         menu();
-        while ((text = reader.readLine()) !=null){
+        while ((text = reader.readLine()) != null) {
             toOperations(text, reader);
             menu();
 
         }
     }
-    void menu(){
+
+    void menu() {
         System.out.println("If you want to find plus please enter 1");
         System.out.println("If you want to find minus please enter 2");
         System.out.println("If you want to find multiplied please enter 3");
@@ -26,7 +27,8 @@ public class Operations {
         System.out.println("If you want to find power please enter 7");
         System.out.println("If you want to exit please enter 8");
     }
-    void  toOperations (String text, BufferedReader reader) throws IOException {
+
+    void toOperations(String text, BufferedReader reader) throws IOException {
         switch (text) {
             case "1" -> plus(reader);
             case "2" -> minus(reader);
@@ -41,6 +43,7 @@ public class Operations {
 
 
     }
+
     void plus(BufferedReader reader) throws IOException {
         System.out.println("Please, enter a first number.");
         int firstNumber = Integer.parseInt(reader.readLine());
@@ -50,6 +53,7 @@ public class Operations {
         System.out.println("The sum of the numbers is " + plus + ".");
 
     }
+
     void minus(BufferedReader reader) throws IOException {
         System.out.println("Please, enter a first number.");
         int firstNumber = Integer.parseInt(reader.readLine());
@@ -59,6 +63,7 @@ public class Operations {
         System.out.println("The difference between the numbers is " + minus + ".");
 
     }
+
     void multiplied(BufferedReader reader) throws IOException {
         System.out.println("Please, enter a first number.");
         int firstNumber = Integer.parseInt(reader.readLine());
@@ -68,6 +73,7 @@ public class Operations {
         System.out.println("The multiplication of the numbers is " + multiplied + ".");
 
     }
+
     void divide(BufferedReader reader) throws IOException {
         System.out.println("Please, enter a first number.");
         int firstNumber = Integer.parseInt(reader.readLine());
@@ -77,6 +83,7 @@ public class Operations {
         System.out.println("The divided of the numbers is " + divide + ".");
 
     }
+
     void percent(BufferedReader reader) throws IOException {
         System.out.println("Please, enter a number.");
         int firstNumber = Integer.parseInt(reader.readLine());
@@ -86,27 +93,31 @@ public class Operations {
         System.out.println("The divided of the numbers is " + percent + ".");
 
     }
-    void factorial(BufferedReader reader ) throws IOException {
+
+    void factorial(BufferedReader reader) throws IOException {
         System.out.println("Please, enter a number.");
         int firstNumber = Integer.parseInt(reader.readLine());
         int factorial = 1;
-        for (int i = 1; i <= firstNumber; i ++) {
-            factorial*=i;
+        for (int i = 1; i <= firstNumber; i++) {
+            factorial *= i;
         }
         System.out.println("The factorial of the numbers is " + factorial + ".");
 
     }
-    void power(BufferedReader reader ) throws IOException {
+
+    void power(BufferedReader reader) throws IOException {
         System.out.println("Please, enter a first number.");
         int firstNumber = Integer.parseInt(reader.readLine());
         System.out.println("Please, enter the power of the first number.");
         int secondNumber = Integer.parseInt(reader.readLine());
         int power = 1;
-        for (int i = 1; i <= secondNumber; i ++) {
-            power = power*firstNumber;
+        for (int i = 1; i <= secondNumber; i++) {
+            power = power * firstNumber;
         }
         System.out.println(" = " + power + ".");
 
 
     }
+
+
 }
